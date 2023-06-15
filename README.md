@@ -1,4 +1,17 @@
-Endereço APIs
+Toda documentação da API pode ser encontrada no swagger acessando:
+
+    http://localhost:8080/swagger-ui/index.html#/
+
+No projeto encontra-se tambem o data-base usada no firebird versão 4
+
+Mas caso não seja usado o spring esta configurado para criar um usuario com:
+
+    login: admin
+    password: admin
+
+    Role: ADMIN
+
+Endereços da API
 
 Autorização e cadastro de Role:
     
@@ -44,16 +57,4 @@ Usuario:
  
     POST:   http://localhost:8080/api/cadastro/user
 
-Todos a documentação da API pode ser encontrada no swagger acessando:
-
-    http://localhost:8080/swagger-ui/index.html#/
-
-No projeto encontra-se tambem o data-base usada no firebird versão 4
-
-Mas caso não seja usado o spring esta configurado para criar um usuario com:
-
-    login: admin
-    password: admin
-
-    Role: ADMIN
 
