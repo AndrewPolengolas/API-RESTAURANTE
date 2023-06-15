@@ -1,0 +1,29 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  datasource:
+    url: jdbc:firebirdsql://localhost:3050/C:\Users\andre\Desktop\Bd-firebird\RESTAURANTE.FDB?encoding=UTF8
+    username: SYSDBA
+    password: Polengolas@284995
+  jpa:
+    generate-ddl: true
+    hibernate:
+      id:
+        new_generator_mappings: false
+        properties:
+          hibernate:
+            dialect: org.hibernate.dialect.FirebirdDialect
+            hbm2ddl.auto: none
+            dialect.resolver: org.hibernate.dialect.resolver.FixedBasicDialectResolver
+      ddl-auto: update
+  jackson:
+    date-format: dd-MM-yyyy HH:mm:ss
+    time-zone: Brazil/East
+
+secret:
+  jwt:
+    SECRET_KEY: ${JWT_SECRET:REST##AURANTE}
+
+server:
+  port: 8080
